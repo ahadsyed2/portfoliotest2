@@ -1,27 +1,8 @@
-import { BlogPosts } from 'app/components/posts'
-import React, { useState, useEffect } from 'react';
-import './styles.css'; // Import your CSS file where you define background animation styles
+import React from 'react';
 
 export default function Page() {
-  const [backgroundColor, setBackgroundColor] = useState('#ff0000'); // Initial background color
-  
-  // Function to generate a random hex color
-  const getRandomColor = () => {
-    return '#' + Math.floor(Math.random()*16777215).toString(16);
-  }
-  
-  // Update background color every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const randomColor = getRandomColor();
-      setBackgroundColor(randomColor);
-    }, 5000); // Change color every 5 seconds
-  
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <section style={{ backgroundColor: backgroundColor }}>
+    <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
@@ -38,8 +19,8 @@ export default function Page() {
           <h2>Relevant Courses</h2>
           <ul>
             <li>Operating System Principles and Programming (Linux)</li>
-            <li>Object Oriented Programming in Jaa</li>
-            <li>Adanced Database Management </li>
+            <li>Object Oriented Programming in Java</li>
+            <li>Advanced Database Management</li>
             <li>Computer Networking</li>
             {/* Add more relevant courses */}
           </ul>
@@ -47,12 +28,12 @@ export default function Page() {
         <div className="box">
           <h2>Notable Skills</h2>
           <ul>
-            <li>Proficient in Java and C programming </li>
+            <li>Proficient in Java and C programming</li>
             <li>SQL and MongoDB</li>
             <li>Web Development using MERN stack</li>
             <li>Thorough Linux/Windows experience</li>
             <li>AWS S3 buckets</li>
-            <li>Computer Hardware setup/drie testing</li>
+            <li>Computer Hardware setup/drive testing</li>
             {/* Add more skills */}
           </ul>
         </div>
