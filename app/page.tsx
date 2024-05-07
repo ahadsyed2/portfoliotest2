@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export default function Page() {
@@ -14,7 +15,7 @@ export default function Page() {
       <p className="mb-4">
         Download my resume <a href="URL-of-your-pdf" download>here</a>.
       </p>
-      <div className="skills-container">
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div className="box">
           <h2>Relevant Courses</h2>
           <ul>
