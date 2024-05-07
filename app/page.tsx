@@ -9,9 +9,7 @@ export default function Page() {
       <p className="mb-4">
         {`test1`}
       </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      
     </section>
   )
 }
