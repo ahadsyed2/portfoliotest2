@@ -1,5 +1,56 @@
 ---
 title: 'Carmony.com'
-publishedAt: '2024-04-08'
-summary: 'Car Marketplace website'
----
+publishedAt: '2024-05-08'
+# Carmony: A Car Marketplace Website
+
+Carmony is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It serves as a car marketplace where users can post car listings, search for available cars, make offers, and create accounts. Additionally, AWS (Amazon Web Services) is utilized for image storage, allowing users to upload images of their cars for listings.
+
+## Technologies Used
+
+- **Frontend**: React.js, React Router, Axios
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (with Mongoose ORM)
+- **Image Storage**: AWS S3 (Simple Storage Service)
+- **Authentication**: JWT (JSON Web Tokens)
+- **Styling**: CSS (with some libraries like Bootstrap or Material UI if applicable)
+- **Deployment**: Heroku (for backend) and Netlify (for frontend), or any other preferred deployment platforms
+
+## Features
+
+1. **User Authentication**: Users can sign up for accounts, log in, and log out securely using JWT authentication.
+
+2. **Car Listings**: Registered users can post car listings, providing details such as make, model, year, price, location, description, and images. AWS S3 is used for storing images securely.
+
+3. **Search Functionality**: Users can search for car listings based on various criteria such as make, model, location, etc.
+
+4. **Offer Management**: Users can make offers on car listings, and sellers can view and manage these offers.
+
+5. **Account Management**: Users can view and edit their account information, including profile details and password.
+
+6. **Responsive Design**: The website is designed to be responsive, ensuring a seamless experience across different devices and screen sizes.
+
+## Project Structure
+
+- **Frontend**: Contains all the React components, stylesheets, and logic for the client-side of the application. Files may be organized based on features or components.
+  - `src/`
+    - `components/`: Reusable UI components.
+    - `pages/`: Components representing different pages/routes of the application.
+    - `hooks/`: Custom hooks, such as the `usePosting` hook for handling HTTP requests.
+    - `services/`: Functions for interacting with the backend API (e.g., Axios configuration).
+    - `App.js`: Main component responsible for routing and layout.
+    - `index.js`: Entry point of the React application.
+
+- **Backend**: Contains all the server-side code for handling requests, interacting with the database, and managing authentication.
+  - `server.js`: Entry point of the Express.js server.
+  - `routes/`: Contains route handlers for different endpoints (e.g., `postingRoutes.js` for handling car posting requests).
+  - `controllers/`: Contains logic for handling requests and responses (e.g., `postingController.js` for car posting logic).
+  - `models/`: Defines Mongoose models for interacting with the MongoDB database.
+
+## Deployment
+
+The application can be deployed using Heroku for the backend (Node.js server) and Netlify for the frontend (React app). AWS S3 bucket needs to be set up for image storage, and appropriate IAM roles and policies should be configured to ensure secure access to S3.
+
+## Conclusion
+
+Carmony provides a user-friendly platform for buying and selling cars, leveraging the power of the MERN stack along with AWS for efficient image storage. With its intuitive interface and robust features, Carmony aims to enhance the car buying and selling experience for users.
+
