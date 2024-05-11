@@ -6,6 +6,7 @@ export default function Page() {
       <section style={{ textAlign: 'left', marginBottom: '2rem' }}>
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
           Ahad Syed
+          BS Computer Science CSU Sacramento May 2024
         </h1>
         <p className="mb-4">
           As a recent computer science graduate, I bring a solid foundation in coding with Java and C, alongside proficiency in web development and database languages such as MongoDB and SQL. 
